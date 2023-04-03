@@ -1,0 +1,100 @@
+.control-section-wptrt-button .accordion-section-title:focus,
+.control-section-wptrt-button .accordion-section-title:hover {
+    background-color: #fff;
+}
+.control-section-wptrt-button .accordion-section-title .button {
+    margin-top: -4px;
+    margin-left: 8px;
+    font-weight: 400;
+}
+.rtl .control-section-wptrt-button .accordion-section-title .button {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+li#customize-control-coffee_shop_corner_logo_top_padding,
+li#customize-control-coffee_shop_corner_logo_bottom_padding,
+li#customize-control-coffee_shop_corner_logo_left_padding,
+li#customize-control-coffee_shop_corner_logo_right_padding{
+    clear: none;
+    width: 22%;
+    margin-right: 10px;
+}
+li#customize-control-coffee_shop_corner_logo_right_padding{
+    margin: 0;
+}
+input#_customize-input-coffee_shop_corner_logo_padding{
+    display: none;
+}
+li#customize-control-coffee_shop_corner_logo_padding{
+    margin-bottom: 0;
+}
+span#_customize-description-coffee_shop_corner_logo_top_padding,
+span#_customize-description-coffee_shop_corner_logo_bottom_padding,
+span#_customize-description-coffee_shop_corner_logo_left_padding,
+span#_customize-description-coffee_shop_corner_logo_right_padding{
+    font-weight: 600;
+}
+
+/*FontAwesome Icon Styles*/
+.coffee-shop-corner-type-icon{
+    overflow: hidden;
+}
+.coffee-shop-corner-selected-icon{
+    background: #F6F6F6;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #EEE;
+    position: relative;
+    margin-right: 45px;
+    cursor: pointer;
+    font-size: 28px;
+}
+.coffee-shop-corner-selected-icon .fa{
+    display: block;
+    line-height: 45px;
+}
+.coffee-shop-corner-selected-icon span{
+    position: absolute;
+    background: #F6F6F6;
+    right: -45px;
+    top: -1px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #EEE;
+    font-size: 20px;
+}
+.coffee-shop-corner-icon-list{
+    height: 215px;
+    overflow-y: scroll;
+    font-size: 18px;
+    border: 1px solid #EEE;
+    border-right: 0;
+    border-top: 0;
+    padding-bottom: 4%;
+    display: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.coffee-shop-corner-icon-list li{
+    float: left;
+    margin: 4% 3% 0;
+    height: 40px;
+    width: 16%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #EEE;
+}
+.coffee-shop-corner-icon-list li:hover{
+    background: #333;
+    border: 1px solid #333;
+    color: #FFF;
+}
+.coffee-shop-corner-icon-list li.icon-active{
+    background: #0073aa;
+    border: 1px solid #0073aa;
+    color: #FFF;
+}

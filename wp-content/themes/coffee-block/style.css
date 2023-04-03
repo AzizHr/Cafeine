@@ -1,0 +1,523 @@
+/*
+Theme Name: Coffee Block
+Theme URI: https://www.sktthemes.org/shop/free-coffee-shop-wordpress-theme
+Author: SKT Themes
+Author URI: https://www.sktthemes.org
+Description: Coffee Block makes use of full screen editing options given by Gutenberg block editor. Coffee block template can be used for cafe, tea, milk, roasters, bakeries, restaurants, eateries, food, chef, cuisines, bar, drinking, dining, recipe, muffins, chocolates, pastries, sandwiches, pizza, bistro, barista, cafeteria, roastery, beverage, roasters, coffeehouse and others. WooCommerce friendly, contact form 7 compatible for call to action and SEO plugins friendly. Easy to use, customize, responsive and flexible and scalable.
+
+Version: 1.0
+Tested up to: 6.1
+Requires at least: 5.0
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: coffee-block
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, full-site-editing, block-patterns, featured-images, full-width-template, sticky-post, threaded-comments
+
+Coffee Block Wordpress theme has been created by SKT Themes(sktthemes.org), 2023.
+Coffee Block Wordpress theme is released under the terms of GNU GPL.
+
+*/
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+summary{display: block;}
+audio,
+canvas,
+video{display: inline-block;}
+audio:not([controls]){display: none; height: 0;}
+[hidden]{display: none;}
+html{font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+html,
+button,
+input,
+select,
+textarea{font-family: 'Poppins', sans-serif;}
+
+body{margin: 0; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;}
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+figure a{display:inline-block;}
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration-style: solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{clear: both; font-family:'Oswald';}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{color: inherit;}
+
+h1{font-size: 48px; margin: 33px 0;}
+h2{font-size: 30px; margin: 25px 0;}
+h3{font-size: 22px; margin: 22px 0;}
+h4{font-size: 20px; margin: 25px 0;}
+h5{font-size: 18px; margin: 30px 0;}
+h6{font-size: 16px; margin: 36px 0;}
+
+p{margin: 0 0 25px;}
+
+img{border: none; max-width: 100%; -ms-interpolation-mode: bicubic; border: 0; vertical-align: middle;}
+
+address{font-style: italic; margin: 0 0 24px;}
+abbr[title]{border-bottom: 1px dotted;}
+b,
+strong{font-weight: bold;}
+dfn{font-style: italic;}
+mark{background: #ff0; color: #000;}
+code,
+kbd,
+pre,
+samp{font-family: monospace, serif; font-size: 14px; hyphens: none;}
+pre{background: #f5f5f5; color: #666; font-family: monospace; font-size: 14px; margin: 20px 0; overflow: auto; padding: 20px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
+blockquote, q{hyphens: none; quotes: none;}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after{content: ""; content: none;}
+blockquote{font-size: 18px; font-style: italic; font-weight: 300; margin: 24px 40px;}
+blockquote blockquote{margin-right: 0;}
+blockquote cite,
+blockquote small{font-size: 14px; font-weight: normal; text-transform: uppercase;}
+blockquote em,
+blockquote i{font-style: normal; font-weight: 300;}
+blockquote strong,
+blockquote b{font-weight: 400;}
+small{font-size: smaller;}
+sub,
+sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup{top: -0.5em;}
+sub{bottom: -0.25em;}
+dl{margin: 0 20px;}
+dt{font-weight: bold;}
+dd{margin: 0 0 20px;}
+menu,
+ol,
+ul{margin: 16px 0; padding: 0 0 0 15px;}
+ul{list-style-type: square;}
+nav ul,
+nav ol{list-style: none; list-style-image: none;}
+li > ul,
+li > ol{margin: 0;}
+svg:not(:root){overflow: hidden;}
+figure{margin: 0;}
+form{margin: 0;}
+fieldset{border: 1px solid #c0c0c0; margin: 0 2px; min-width: inherit; padding: 0.35em 0.625em 0.75em;}
+legend{border: 0; padding: 0; white-space: normal;}
+
+button,
+input,
+select,
+textarea{font-size: 100%; margin: 0; max-width: 100%; vertical-align: baseline;}
+button,
+input{line-height: normal;}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]{-webkit-appearance: button; cursor: pointer;}
+button[disabled],
+input[disabled]{cursor: default;}
+input[type="checkbox"],
+input[type="radio"]{padding: 0;}
+input[type="search"]{-webkit-appearance: textfield; padding-right: 2px; width: 270px;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
+button::-moz-focus-inner,
+input::-moz-focus-inner{border: 0; padding: 0;}
+textarea{overflow: auto; vertical-align: top; resize: none; min-height: 120px;}
+
+table{border-bottom: 1px solid #ededed; border-collapse: collapse; border-spacing: 0; line-height: 2; margin: 0 0 20px;	width: 100%;}
+caption,
+th,
+td{font-weight: normal; text-align: left;}
+caption{font-size: 16px; margin: 20px 0;}
+th{font-weight: bold; text-transform: uppercase;}
+td{border-top: 1px solid #ededed; padding: 6px 10px 6px 0;}
+del{color: #333;}
+ins{background: #fff9c0; text-decoration: none;}
+
+/* Form fields styles. */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+textarea{border: 1px solid #efefef; width: 100%; border-radius: 8px; padding: 13px; outline: none;}
+
+select{background: transparent; border: 1px solid #00b5e2; width: 100%; border-radius: 8px; padding: 13px; outline: none;}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]{background-color: #ffac47; border: none; border-radius: 50px; color: #fff; display: inline-block; font-size: 20px; font-weight: 500; padding: 18px 50px; text-decoration: none; transition: all 0.2s;}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover{background-color: #222;}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+::placeholder{color: #041F69; opacity: 1;}
+:-ms-input-placeholder{color: #041F69;}
+::-ms-input-placeholder{color: #041F69;}
+
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0;
+	border: none;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
+
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
+.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: inherit;
+}
+
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding-top: var(--wp--custom--spacing--outer);
+	padding-bottom: var(--wp--custom--spacing--large);
+	padding-right: var(--wp--custom--spacing--outer);
+	padding-left: var(--wp--custom--spacing--outer);
+}
+
+.coffee-block-header .wp-block-cover, .coffee-block-header .wp-block-cover-image, .coffee-block-footer .wp-block-cover, .coffee-block-footer .wp-block-cover-image, .coffee-block-porduct-section, .coffee-block-menu-section{align-items:inherit;}
+.coffee-block-footer-menu .wp-block-navigation li {padding-left:20px; position:relative;}
+.coffee-block-footer-menu .wp-block-navigation li:before{ content:''; width:8px; height:8px; background:#fff; left:0px; top:50%; position:absolute; border-radius:100%; transform:translateY(-50%);}
+.coffee-block-header .wp-block-navigation__submenu-container{min-width:215px !important; background:#5f1c00 !important;}
+.coffee-block-menu .wp-block-navigation li{padding:17px 0px;}
+.coffee-block-menu .wp-block-navigation__submenu-container li{padding:inherit;}
+.coffee-block-menu .wp-block-group {padding:0;}
+.wc-block-mini-cart__button:hover {background:transparent;}
+
+.coffee-block-menu {font-family:Oswald;}
+.coffee-block-header .wp-block-navigation li.current-menu-item .wp-block-navigation-item__label, .coffee-block-header .wp-block-navigation li .wp-block-navigation-item__label:hover{color:#ffac47;}
+.coffee-block-footer-menu .wp-block-navigation li.current-menu-item .wp-block-navigation-item__label, .coffee-block-footer-menu .wp-block-navigation li .wp-block-navigation-item__label:hover{ color:#ff8502;}
+.coffee-block-footer-menu .wp-block-navigation li:hover:before, .coffee-block-footer-menu .wp-block-navigation li.current-menu-item:before{ background:#ff8502;}
+
+.coffee-block-coffee-beans .wp-block-image{background:#5f1c00; width:170px; height:170px; border-radius:100%; align-items:center !important; display:flex !important; justify-content:center !important;}
+.coffee-block-coffee-beans h3 {width:50%; margin:0 auto;}
+.coffee-block-coffee-beans:hover .wp-block-image{background: #c28030;}
+.coffee-block-coffee-beans:hover h3{color:#c28030 !important;}
+.coffee-block-better-taste-box .wp-block-image{background:#fff; width:100px; height:100px; border-radius:100%; align-items:center !important; display:flex !important; justify-content:center !important; float:left;}
+.coffee-block-product-box .wc-block-components-product-image img {width:auto !important; margin:0 auto; display:table;}
+
+.coffee-block-menu-section::before {content:''; width:35%; height:100%; background:#c28030; position:absolute; left:0px; top:0; z-index:1;}
+.coffee-block-section .wp-block-columns{position: relative;
+overflow: hidden;}
+.coffee-block-discount-box {width:230px !important; height:230px; position:absolute; right:-60px; bottom:-50px;}
+.coffee-block-section-box .wp-block-column {z-index:9;}
+.coffee-block-section .coffee-block-section-box::before {content:''; width:99.5%; height:99%; border:solid 2px #bd9655; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); border-style: dashed;}
+.coffee-block-inner-banner{ position:relative; z-index:-1;}
+
+.coffee-block-section11-left {margin-right:100px !important;}
+.coffee-block-section11{ position:relative;}
+.coffee-block-section11::before {content:''; width:41.5%; position:absolute; height:100%; background:#c28030; z-index:0;}
+.coffee-block-section11 .wp-block-columns{ position:relative; z-index:0;}
+
+.coffee-block-section7-right .wp-block-image {position:absolute; right:0;}
+.coffee-block-section7 {position:relative; overflow:hidden;}
+.coffee-block-section5-left {position:relative;}
+.coffee-block-section5-left::after {content:""; position:absolute; left:0; top:0; background:#c28030; width:45%; height:100%; z-index:-1;}
+.coffee-block-header{ position:absolute !important; width:100%; z-index:2;}
+
+/**woocommerce**/
+.woocommerce div.product .product_title{ display: none;}
+.entry-summary .price {padding -bottom:15px !important;}
+.woocommerce div.product .quantity .qty {width:auto;}
+.cart {padding-bottom:20px !important;}
+.woocommerce div.product div.images img { width:auto !important; margin:0 auto;}
+.woocommerce-tabs .tabs.wc-tabs {margin:0px !important; padding:0px !important;}
+.woocommerce-tabs .tabs.wc-tabs:before{ border:none !important;}
+.woocommerce-tabs .woocommerce-Tabs-panel {font-size:20px; padding:40px !important; background-color: #f6f6f6;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li{background:#222 !important; color:#fff !important; border-radius:0px !important; }
+.woocommerce div.product .woocommerce-tabs ul.tabs li a{color:#fff; font-weight:400 !important;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after, .woocommerce div.product .woocommerce-tabs ul.tabs li::before{ display:none;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce div.product .woocommerce-tabs ul.tabs li{ border:none !important; padding:5px 30px !important;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{ background:#ffac47 !important;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover{color:#fff !important;}
+.related.products h2 {text-align:center;}
+
+.related.products li .price, .products li .price{ text-align:center;}
+.related.products .button, .products .button{display:table; margin:0 auto;}
+.related.products, .products{ text-align:center;}
+.related.products li, .products li{float:none !important; display:inline-block; margin:15px !important; padding:35px 15px 0px !important; border-radius: 5px !important;}
+.related.products li img, .products li img {width:auto !important; text-align:center; display:table !important; margin:0 auto !important; margin-bottom:20px !important;}
+
+.woocommerce div.product .related.products {padding:40px !important; background-color:#f6f6f6;}
+.qty.text {width:auto !important;}
+.woocommerce-account .wp-block-post-title, .woocommerce-account main .woocommerce, .woocommerce-cart .wp-block-post-title, .woocommerce-cart main .woocommerce, .woocommerce-checkout .wp-block-post-title, .woocommerce-checkout main .woocommerce {max-width:100%;}
+.woocommerce-page .button {padding:10px 35px !important;}
+.woocommerce-Price-amount bdi {font-weight:600;}
+.select2-container--default .select2-selection--single, .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {border:1px solid #222; border-radius:0px;}
+body.home .coffee-block-menu li:nth-child(1) span {color:#ffac47;}
+body.home .coffee-block-menu li .wp-block-navigation__submenu-container li:nth-child(1) span {color:inherit;}
+body.home .coffee-block-menu li .wp-block-navigation__submenu-container li:nth-child(1) span:hover, body.home .coffee-block-menu li .wp-block-navigation__submenu-container li span:hover, .coffee-block-menu li .wp-block-navigation__submenu-container li span:hover {color:#ffac47;}
+.coffee-block-section10 .add_to_cart_button {border-radius:100px; background-color:#c28030; padding:12px 25px !important;}
+.added_to_cart.wc-forward {display:block;}
+.current-menu-item a{color:#ffac47;}
+
+@media(max-width: 1440px){
+.coffee-block-section7-right .wp-block-image {position:relative; right:-114px;}
+.coffee-block-menu-section::before{ width:25%;}
+}
+@media(max-width: 1300px){
+.coffee-block-section7-right .wp-block-image{ right:-40px;}
+}
+
+@media(max-width: 1199px){
+.coffee-block-menu-section::before { display:none}
+.coffee-block-header-top-bar {padding:20px 15px !important;}
+}
+
+@media(min-width: 1024px) and (max-width: 1200px){
+.woocommerce-page .button {padding:10px 25px !important;}
+.related.products li, .products li{margin:10px !important;}
+}
+
+@media(max-width: 1023px){
+.coffee-block-inner-banner h2.has-text-color, .coffee-block-inner-banner h1.has-text-color{padding-top:180px !important;}
+.coffee-block-banner-content h1 {font-size:32px !important;}
+h2.has-text-color {font-size:30px !important; padding-bottom:25px !important;}
+h3.has-text-color {font-size:20px !important;}
+h5.has-text-color {font-size:18px !important;}
+.has-text-align-right, has-text-align-left {text-align:center !important;}
+.wp-block-image {margin:0px !important;}
+.coffee-block-header-top-bar-left {text-align:center; padding-bottom:25px;}
+.coffee-block-header-top-bar-left .wp-block-image {display:table; margin:0 auto !important; float:none !important; margin-bottom:10px !important; display:none;}
+.coffee-block-header-top-bar {padding-top:20px !important; padding-bottom:35px !important;}
+
+.coffee-block-banner-content {padding-top:0px !important; text-align:center; padding-bottom:40px;}
+.coffee-block-banner-content .wp-block-buttons {margin:0 auto; display: table !important;}
+.coffee-block-header-top-bar-right .wp-block-woocommerce-mini-cart {display:table; margin:0 auto !important; padding-top:20px;}
+.coffee-block-section1 {padding:40px 15px 0px !important;}
+.coffee-block-section1-left {text-align:center;}
+.coffee-block-section1-left .wp-block-button{ display:table; margin:0 auto;}
+.coffee-block-section1-right {padding-top:40px;}
+.coffee-block-coffee-beans {margin-bottom:40px !important;}
+.coffee-block-coffee-beans h3 {width:100%;}
+.coffee-block-section1-left p {padding-top:0px !important;}
+
+.coffee-block-section2{padding:60px 15px 40px !important;}
+.coffee-block-section2-right {text-align:center;}
+.coffee-block-section2-right .wp-block-image{margin:0 auto; display:table; margin-bottom:20px !important; margin-inline-start:auto !important; margin-inline-end:auto !important; float:none !important;}
+
+.coffee-block-section3{ padding:40px 15px !important; text-align:center;}
+.coffee-block-section3-right {margin-top:40px !important; padding: 30px !important; text-align: center !important;}
+.coffee-block-better-taste-box .wp-block-image{ float:none; margin-bottom:15px !important;}
+.coffee-block-section3-left .wp-block-button{ display:table; margin:0 auto;}
+.coffee-block-discount-box {padding-top:30px !important;}
+
+.coffee-block-section5-inner {padding:40px 15px !important;}
+.coffee-block-porduct-section {padding:40px 0px !important;}
+.coffee-block-menu-section::before { display:none;}
+.coffee-block-menu-section .wp-block-group {text-align:center;}
+.coffee-block-section5-right .wp-block-buttons {display:table; margin:0 auto;}
+.coffee-block-section6 {padding:40px 15px !important;}
+.coffee-block-section7-left {padding:40px 15px !important;}
+.coffee-block-section7-left .wp-block-group, .coffee-block-section7-left h2.has-text-color, .coffee-block-section7-left .wp-block-columns {padding:0px !important;}
+.coffee-block-section7-testimonial-box { padding:30px !important;}
+.wp-block-group.coffee-block-section7-testimonial-box {padding:30px !important;}
+.coffee-block-section7-left .wp-block-columns {margin-top:40px !important;}
+.wp-block-group.coffee-block-section7-testimonial-box .wp-block-columns {margin-top:0px !important;}
+.coffee-block-section7-right .wp-block-image {margin:0px !important; right:0px;}
+.coffee-block-section7-left h5, .coffee-block-section7-left h2 {text-align:center;}
+.coffee-block-section7-testimonial-box h4, .coffee-block-section7-testimonial-box p {text-align:center;}
+.coffee-block-section7-testimonial-box .wp-block-image {margin:0 auto !important; float:none !important;}
+.coffee-block-section7-right .wp-block-image, .coffee-block-section7-right .wp-block-image img{ width:100% !important;}
+
+.coffee-block-section9 {padding:40px 15px !important;}
+.coffee-block-section10 {padding:40px 15px !important;}
+.coffee-block-section11 {padding:0px !important;}
+.coffee-block-section11-left {padding:0px !important; padding-bottom:40px !important;}
+.coffee-block-section11-left h5, .coffee-block-section11-left h2 {text-align:center;}
+.coffee-block-section11-left .wp-block-buttons{display:table !important; margin:0 auto !important;}
+.coffee-block-section11-right .wp-block-column {border:none;}
+.coffee-block-section11-left {margin-right:0px !important;}
+.coffee-block-section11-left .wp-block-group {padding:40px !important;}
+.coffee-block-section11::before { display:none;}
+.coffee-block-section11-right {padding:0px 0px 40px 0px !important;}
+
+.coffee-block-section-box {padding:80px 25px 200px !important;}
+.coffee-block-section-box h2{font-size:38px !important;}
+.coffee-block-section-box .wp-block-column{ padding:0px !important;}
+.coffee-block-footer-column {padding:20px 15px !important;}
+.coffee-block-footer-box, .coffee-block-footer-menu {padding:20px 0px;}
+.coffee-block-footer-copyright .wp-block-column {text-align:center;}
+.coffee-block-section11-right .wp-block-columns {border:none; margin:0px !important;}
+
+.header-layout1{padding:20px 0px !important;}
+.coffee-block-404 .wp-block-search__inside-wrapper {width:100% !important;}
+.coffee-block-404 {padding:40px 15px !important;}
+
+.coffee-block-blog-area, .coffee-block-blog-right-side, .coffee-block-blog-left-side-page, .coffee-block-blog-no-sidebar, .coffee-block-archive-page {padding:40px 15px !important;}
+.coffee-block-blog-content {padding-left:0px !important; padding-top:25px;}
+.coffee-block-blog-meta .wp-block-post-date, .coffee-block-blog-meta .wp-block-post-author, .coffee-block-blog-meta .wp-block-post-terms {width:100% !important; padding:0px !important;}
+.coffee-block-blog-left-side-area {padding-right:0px !important;}
+.coffee-block-blog-right-side-page{ padding-left:0px !important;}
+.coffee-block-contact-lay1, .coffee-block-contact-lay2-box{padding:40px 15px !important;}
+.coffee-block-contact-lay1 .wp-block-group{ padding-right:0px !important;}
+.coffee-block-contact-lay1 .coffee-block-contact-info{ padding-top:40px;}
+.coffee-block-contact-info-box {padding:30px !important;}
+.coffee-block-service-single-lay{padding:40px 15px 0px !important;}
+.coffee-block-service-menu {padding-right:0px !important; padding-bottom:40px;}
+.coffee-block-service-single-lay h2 {font-size:24px !important;}
+.coffee-block-team-section1 {padding:40px 15px !important;}
+.coffee-block-team-section1-right{ padding-top:40px;}
+.coffee-block-team-section1 .wp-block-columns{ padding-bottom:40px !important;}
+.coffee-block-team-section2{ padding-top:0px !important; padding-bottom:20px !important;}
+.coffee-block-team-section-box {margin-bottom:30px !important; padding-right:0px !important;}
+.coffee-block-archive-left {padding-right:0px !important;}
+.coffee-block-inner-banner-title {font-size:26px !important; margin:0px !important;}
+.coffee-block-blog-single-area {padding:40px 15px !important;}
+.coffee-block-blog-single-right-area {padding-left:0px !important; padding-top:40px;}
+.coffee-block-section9 .wp-block-buttons {margin-top:30px !important;}
+.coffee-block-inner-banner .wp-block-cover {min-height:220px !important;}
+.coffee-block-404 h1{padding-bottom:30px !important; font-size:30px !important;}
+.related.products li, .products li{width:100% !important; margin:0 auto !important;}
+.coffee-block-section5-menu-box .wp-block-column {text-align:center;}
+.coffee-block-section5-left::after{ display:none;}
+.coffee-block-section5-left, .coffee-block-section5-right{ padding:0px !important;}
+}
+
+@media(min-width: 1024px){
+.coffee-block-banner{padding-left:60px !important;}
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+.coffee-block-header-top-bar {padding:20px 15px !important;}
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.coffee-block-header-top-bar-left, .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.coffee-block-header-top-bar-logo, .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.coffee-block-header-top-bar-right {flex-basis:auto !important; width:33.33%; float:left; padding:0px !important;}
+.coffee-block-coffee-beans .wp-block-image{width:140px; height:140px;}
+.coffee-block-header-top-bar-right .wc-block-mini-cart.wp-block-woocommerce-mini-cart {padding:0px;}
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.coffee-block-banner-content, .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.coffee-block-banner-image{flex-basis:auto !important; width:50%; float:left; padding:0px !important; text-align:left;}
+.coffee-block-banner-content .wp-block-buttons {margin:inherit;}
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column.coffee-block-banner-content {padding-top:40px !important;}
+.coffee-block-section1-right .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {flex-basis:auto !important;}
+.coffee-block-better-taste-box {flex-basis:auto !important; width:49% !important; display:inline-block; padding:15px !important;}
+.coffee-block-section11-right .is-layout-flow.wp-block-column {flex-basis:auto !important; padding:15px;}
+.coffee-block-section2-left .wp-block-image.alignleft.size-full, .coffee-block-section5-inner .wp-block-image.alignleft.size-full {float:none; text-align:center; width:100%;}
+.coffee-block-section7-testimonial-box {width:60%; margin:0 auto;}
+.coffee-block-banner{padding-left:60px !important;}
+}
+
+@media(min-width: 600px) and (max-width: 1023px){
+.coffee-block-section8-product-box ul li, .coffee-block-section4-product-box ul li, .coffee-block-section9 ul li {width:calc(50% - .9375em) !important;}
+.coffee-block-section-box {padding:80px 100px 200px !important;}
+}
+
+@media(min-width: 1024px) and (max-width: 1440px){
+h2.has-text-color {font-size:40px !important; padding-bottom:25px !important;}
+h3.has-text-color {font-size:20px !important;}
+h5.has-text-color {font-size:18px !important;}
+.coffee-block-blog-content h2 {font-size:24px !important;}
+.coffee-block-coffee-beans h3 {width:100%;}
+.coffee-block-section7-left .wp-block-group {padding:0px !important;}
+.coffee-block-section7-left .wp-block-columns {padding:0px !important;}
+.coffee-block-section7-left h2{ padding:0px !important;}
+.coffee-block-section1-left p {padding-top:0px !important;}
+.coffee-block-section7-left {padding:40px 15px 0px !important;}
+.wp-block-group .coffee-block-section7-testimonial-box {padding:20px 25px !important; margin-top: 30px !important;}
+.wp-block-group .coffee-block-section7-testimonial-box p{ font-size:16px !important; padding-bottom:10px !important;}
+.coffee-block-section-box{padding-right:30px !important; padding-left:30px !important;}
+.coffee-block-section8 h2{font-size: 46px !important;}
+.coffee-block-banner-content h1{font-size:50px !important;}
+.coffee-block-header-top-bar-left .wp-block-image {margin:0px !important;}
+.coffee-block-404 h3.has-text-color {font-size:80px !important;}
+.coffee-block-section11-left{padding-left: 40px;}
+}
+
+@media(max-width: 767px){
+.coffee-block-header-banner .wp-block-cover{padding-top:300px !important;}
+.coffee-block-inner-banner h2.has-text-color, .coffee-block-inner-banner h1.has-text-color{padding-top:320px !important;}
+.coffee-block-inner-banner h1.has-text-align-center, .coffee-block-inner-banner h2.has-text-align-center{padding-top:320px !important; font-size:26px !important;}
+}
+
+@media(min-width: 600px) and (max-width: 799px){
+.coffee-block-header .wp-block-navigation__submenu-container {right:-1px !important; left:auto !important;}
+}
+
+@media(max-width: 599px){
+.coffee-block-menu {position:relative; right:0px; top:-25px;}
+.coffee-block-menu .wp-block-navigation ul{display: block !important; width: 100%; text-align: right; min-width:310px !important; padding-left:5px !important;}
+.wp-block-navigation__submenu-container li {padding-right:0px !important;}
+.coffee-block-menu .wp-block-navigation ul li{display:block !important; border-bottom:solid 1px #ccc; margin-bottom:0px; padding:15px 0px; padding-right:25px;}
+.coffee-block-menu .wp-block-navigation__submenu-container {padding-right:0px !important;}
+.coffee-block-menu .wp-block-navigation ul li a{ line-height:normal !important;}
+.coffee-block-menu .wp-block-navigation__submenu-container li a{ text-align:right; display:inherit !important;}
+.coffee-block-menu .wp-block-navigation__submenu-container{ padding-top:20px !important;}
+.coffee-block-menu .wp-block-navigation__submenu-container li {border:none !important;}
+.coffee-block-menu .wp-block-navigation__responsive-container-open:hover {background:none;}
+.coffee-block-menu .wp-block-navigation__responsive-container-open svg{width:35px; height:35px;}
+.coffee-block-menu .wp-block-navigation.items-justified-right{ padding-top:0px;}
+.coffee-block-menu .current-menu-item a, .coffee-block-menu li a:hover {color:#ffac47 !important; background:none !important;}
+.coffee-block-menu .is-layout-constrained {padding:5px !important;}
+}

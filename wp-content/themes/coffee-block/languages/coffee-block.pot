@@ -1,0 +1,91 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Coffee Block\n"
+"POT-Creation-Date: 2023-03-17 16:56+0530\n"
+"PO-Revision-Date: 2023-03-17 16:56+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#. Theme Name of the plugin/theme
+#: includes/block-patterns.php:10
+msgid "Coffee Block"
+msgstr ""
+
+#: includes/patterns/coffee-block-background-header.php:15
+msgid "Background Header"
+msgstr ""
+
+#: includes/patterns/coffee-block-footer.php:8
+msgid "Footer"
+msgstr ""
+
+#: includes/patterns/coffee-block-header.php:15
+msgid "Transparent Header"
+msgstr ""
+
+#: includes/patterns/coffee-block-hero-banner.php:6
+msgid "Hero Banner"
+msgstr ""
+
+#: includes/patterns/coffee-block-section1.php:6
+msgid "How We Prepare Our Coffee Beans"
+msgstr ""
+
+#: includes/patterns/coffee-block-section11.php:6
+msgid "Our Clients"
+msgstr ""
+
+#: includes/patterns/coffee-block-section2.php:6
+msgid "About Company"
+msgstr ""
+
+#: includes/patterns/coffee-block-section3.php:6
+msgid "What We Do"
+msgstr ""
+
+#: includes/patterns/coffee-block-section4.php:6
+msgid "Our Products"
+msgstr ""
+
+#: includes/patterns/coffee-block-with-archive-title.php:6
+msgid "Cover With Archive title"
+msgstr ""
+
+#: includes/patterns/coffee-block-with-heading-title.php:7
+msgid "Cover With Heading title"
+msgstr ""
+
+#: includes/patterns/coffee-block-with-post-title.php:7
+msgid "Cover With Post title"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.sktthemes.org/shop/free-coffee-shop-wordpress-theme"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Description Here"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "SKT Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.sktthemes.org"
+msgstr ""
