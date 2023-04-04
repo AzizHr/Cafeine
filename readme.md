@@ -1,4 +1,4 @@
-##Welcome everyone :
+<h1>Welcome everyone :</h1>
 
 In order to create this project I did follow these steps :
 
